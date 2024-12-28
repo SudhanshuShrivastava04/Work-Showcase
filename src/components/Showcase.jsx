@@ -4,11 +4,11 @@ import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
 
 const Showcase = () => {
-  const texture = useTexture("./image.png");
+  const texture = useTexture("./images.png");
   const ref = useRef(null);
 
   useFrame((state, delta) => {
-    ref.current.rotation.y += delta;
+    ref.current.rotation.y += delta * 0.5;
   });
 
   return (

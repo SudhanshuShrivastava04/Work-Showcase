@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Canvas flat camera={{ fov: 30 }}>
-        {/* <OrbitControls /> */}
+        <OrbitControls />
         <ambientLight />
         <Showcase />
         <EffectComposer>
@@ -23,7 +23,7 @@ const App = () => {
             luminanceThreshold={0} // luminance threshold. Raise this value to mask out darker elements in the scene.
             luminanceSmoothing={0} // smoothness of the luminance threshold. Range is [0, 1]
           />
-          {/* <ToneMapping adaptive /> */}
+          <ToneMapping adaptive />
         </EffectComposer>
       </Canvas>
 
