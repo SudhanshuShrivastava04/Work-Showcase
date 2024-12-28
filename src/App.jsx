@@ -12,8 +12,8 @@ import {
 const App = () => {
   return (
     <>
-      <Canvas flat camera={{ fov: 30 }}>
-        <OrbitControls />
+      <Canvas flat camera={{ fov: 45 }}>
+        <OrbitControls enableZoom={false} />
         <ambientLight />
         <Showcase />
         <EffectComposer>

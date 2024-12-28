@@ -12,13 +12,13 @@ const Showcase = () => {
   });
 
   return (
-    <group rotation={[0, 1.5, 0.5]}>
+    <group rotation={[0, 2.5, 0.5]}>
       <mesh ref={ref}>
         <cylinderGeometry
           args={[
-            1, // radiusTop
-            1, //radiusBottom
-            1, //height
+            2, // radiusTop
+            2, //radiusBottom
+            2, //height
             60, // radialSegments
             60, // heightSegments
             true, // openEnded
